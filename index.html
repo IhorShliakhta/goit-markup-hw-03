@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"> 
   <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
   <title>Web Studio</title>
 </head>
 <body>
@@ -40,7 +39,7 @@
     <section class="qualities">  
       <div class="conteiner qualities-conteiner">
         <h2 class="visually-hidden">Наши преимущества</h2>
-        <ul>
+        <ul class="qualities-li">
           <li>
             <div class="qualities-box1">
               <a href="" aria-label="satelit"></a>
@@ -77,78 +76,92 @@
       </div>      
     </section>
     <section class="what-we-do">
-      <h2>Чем мы занимаемся</h2>
-      <ul>
-        <li>
-          <img src="img/desktopapp.png" alt="Десктопные приложения" width="370" height="294">
-          <p>Десктопные приложения</p></li>
-        <li>
-          <img src="img/mobailapp.png" alt="Мобильные приложения" width="370" height="294">
-          <p>Мобильные приложения</p></li>
-        <li>
-          <img src="img/webdesig.png" alt="Дизайнерские решения" width="370" height="294"> 
-          <p>Дизайнерские решения</p></li>
-      </ul>
+      <div class="conteiner we-do-conteiner">
+        <h2 class="we-do-item">Чем мы занимаемся</h2>
+        <ul class="we-do-li">
+          <li>
+            <img src="img/desktopapp.png" alt="Десктопные приложения" width="370" height="294">
+            <p>Десктопные приложения</p></li>
+          <li>
+            <img src="img/mobailapp.png" alt="Мобильные приложения" width="370" height="294">
+            <p>Мобильные приложения</p></li>
+          <li>
+            <img src="img/webdesig.png" alt="Дизайнерские решения" width="370" height="294"> 
+            <p>Дизайнерские решения</p></li>
+        </ul>
+    </div>
     </section>
     <section class="our-team">
-      <h2>Наша команда</h2>
-      <ul>
-        <li>
-          <img src="img/john.png" alt="фото мужчины" width="270" height="260">
-          <h4>John Smith</h4>
-          <span class="profession">Product Designer</span>
-          <ul>
-            <li><a href="" aria-label="instagram"></a></li>
-            <li><a href="" aria-label="twiter"></a></li>
-            <li><a href="" aria-label="facebook"></a></li>
-            <li><a href="" aria-label="linkedin"></a></li>
-          </ul>
-        </li>
-        <li>
-          <img src="img/marta.png" alt="фото женщины" width="270" height="260">
-          <h4>Marta Stewart</h4>
-          <span class="profession">Frontend Developer</span>
-          <ul>
-            <li><a href="" aria-label="instagram"></a></li>
-            <li><a href="" aria-label="twiter"></a></li>
-            <li><a href="" aria-label="facebook"></a></li>
-            <li><a href="" aria-label="linkedin"></a></li>
-          </ul>
-        </li>
-        <li>
-          <img src="img/robert.png" alt="фото мужчины" width="270" height="260">
-          <h4>Robert Jakis</h4>
-          <span class="profession">Marketing</span>
-          <ul>
-            <li><a href="" aria-label="instagram"></a></li>
-            <li><a href="" aria-label="twiter"></a></li>
-            <li><a href="" aria-label="facebook"></a></li>
-            <li><a href="" aria-label="linkedin"></a></li>
-          </ul>
-        </li>
-        <li>
-          <img src="img/martin.png" alt="фото мужчины" width="270" height="260">
-          <h4>Martin Doe</h4>
-          <span class="profession">UI Designer</span>
-          <ul>
-            <li><a href="" aria-label="instagram"></a></li>
-            <li><a href="" aria-label="twiter"></a></li>
-            <li><a href="" aria-label="facebook"></a></li>
-            <li><a href="" aria-label="linkedin"></a></li>
-          </ul>
-        </li>
-      </ul>
+      <div class="conteiner team-conteiner">
+        <h2 class="team-item">Наша команда</h2>
+        <ul class="team-li">
+          <li>
+            <div class="card-team1">   
+              <img src="img/john.png" alt="фото мужчины" width="270" height="260">
+              <h4>Николай Кучеренко</h4>
+              <span class="profession">Product Designer</span>
+              <ul>
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twiter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkedin"></a></li>
+              </ul>
+            </div> 
+          </li>
+          <li>
+            <div class="card-team2">
+              <img src="img/marta.png" alt="фото женщины" width="270" height="260">
+              <h4>Ольга Иванова</h4>
+              <span class="profession">Frontend Developer</span>
+              <ul>
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twiter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkedin"></a></li>
+              </ul>
+          </div>
+          </li>
+          <li>
+            <div class="card-team3">
+              <img src="img/robert.png" alt="фото мужчины" width="270" height="260">
+              <h4>Андрей Шевченко</h4>
+              <span class="profession">Marketing</span>
+              <ul>
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twiter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkedin"></a></li>
+              </ul>
+            </div>
+          </li>
+          <li>
+            <div class="card-team4">
+              <img src="img/martin.png" alt="фото мужчины" width="270" height="260">
+              <h4>Иван Николаев</h4>
+              <span class="profession">UI Designer</span>
+              <ul>
+                <li><a href="" aria-label="instagram"></a></li>
+                <li><a href="" aria-label="twiter"></a></li>
+                <li><a href="" aria-label="facebook"></a></li>
+                <li><a href="" aria-label="linkedin"></a></li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
     </section>
     <section class="our-clients">
-      <h2>Постоянные клиенты</h2>
-      <ul>
-        <li><a href="" aria-label="company1"></a></li>
-        <li><a href="" aria-label="company2"></a></li>
-        <li><a href="" aria-label="company3"></a></li>
-        <li><a href="" aria-label="company4"></a></li>
-        <li><a href="" aria-label="company5"></a></li>
-        <li><a href="" aria-label="company6"></a></li>
-      </ul>
+      <div class="conteiner clients">
+        <h2>Постоянные клиенты</h2>
+        <ul>
+          <li><a href="" aria-label="company1"></a></li>
+          <li><a href="" aria-label="company2"></a></li>
+          <li><a href="" aria-label="company3"></a></li>
+          <li><a href="" aria-label="company4"></a></li>
+          <li><a href="" aria-label="company5"></a></li>
+          <li><a href="" aria-label="company6"></a></li>
+        </ul>
+      </div>
     </section>
   </main>
   <footer>
