@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700;900&family=Roboto:wght@400;700;900&display=swap"> 
   <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/0.6.0/modern-normalize.min.css">
   <title>Web Studio</title>
 </head>
 <body>
   <header>
-    <nav>
-      <a href="/" class="logo"><span class="logo-one">Web</span> <span>Studio</span></a>
+    <div class="conteiner conteiner-header">
+    <nav class="nav-conteiner">
+      <a href="/" class="logo"><span class="logo-one">Web</span> Studio</a>
       <ul>
         <li><a href="./index.html">Студия</a></li>
         <li><a href="./portfolio.html">Портфолио</a></li>
@@ -26,40 +28,53 @@
         </li>
       </ul>
     </div>
+    </div>
   </header>
   <main>
-    <section class="firs-pic">
-      <h1>Эффективные решения для вашего бизнеса</h1>
-      <a href="#" class="button-h1">Заказать услугу</a>
+    <section class="main-pic">
+      <div class="background-img">
+        <h1 class="hero-title">Эффективные решения для вашего бизнеса</h1>
+        <button class="button-h1">Заказать услугу</button>
+      </div>
     </section>
     <section class="qualities">  
-      <h2 class="visually-hidden">Наши преимущества</h2>
-      <ul>
-        <li>
-          <a href="" aria-label="satelit"></a>
-          <h3 class="section-subtitle">Внимание к деталям</h3>
-          <p>Идейные соображения, 
-            а также начало повседневной работы по формированию позиции.</p>
-        </li>
-        <li>
-          <a href="" aria-label="clock"></a>
-          <h3 class="section-subtitle">Пунктуальность</h3>
-          <p>Задача организации, 
-            в особенности же рамки и место обучения кадров влечет за собой.</p>
-        </li>
-        <li>
-          <a href="" aria-label="laptop"></a>
-          <h3 class="section-subtitle">Планирование</h3>
-          <p>Равным образом консультация 
-            с широким активом в значительной степени обуславливает.</p>
-        </li>
-        <li>
-          <a href="" aria-label="cosmoman"></a>
-          <h3 class="section-subtitle">Современные технологии</h3>
-          <p>Значимость этих проблем настолько очевидна, 
-            что реализация плановых заданий.</p>
-        </li>
-      </ul>       
+      <div class="conteiner qualities-conteiner">
+        <h2 class="visually-hidden">Наши преимущества</h2>
+        <ul>
+          <li>
+            <div class="qualities-box1">
+              <a href="" aria-label="satelit"></a>
+              <h3 class="section-subtitle">Внимание к деталям</h3>
+              <p>Идейные соображения, 
+                а также начало повседневной работы по формированию позиции.</p>
+            </div>
+          </li>
+          <li>
+            <div class="qualities-box2">
+              <a href="" aria-label="clock"></a>
+              <h3 class="section-subtitle">Пунктуальность</h3>
+              <p>Задача организации, 
+                в особенности же рамки и место обучения кадров влечет за собой.</p>
+            </div>
+          </li>
+          <li>
+            <div class="qualities-box3">
+              <a href="" aria-label="laptop"></a>
+              <h3 class="section-subtitle">Планирование</h3>
+              <p>Равным образом консультация 
+                с широким активом в значительной степени обуславливает.</p>
+            </div>
+          </li>
+          <li>
+            <div class="qualities-box4">
+              <a href="" aria-label="cosmoman"></a>
+              <h3 class="section-subtitle">Современные технологии</h3>
+              <p>Значимость этих проблем настолько очевидна, 
+                что реализация плановых заданий.</p>
+            </div>
+          </li>
+        </ul> 
+      </div>      
     </section>
     <section class="what-we-do">
       <h2>Чем мы занимаемся</h2>
@@ -137,31 +152,35 @@
     </section>
   </main>
   <footer>
-    <a href="/" class="logo"><span class="logo-one">Web</span> <span class="">Studio</span></a>
-    <address>
-    <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwi7kYGuuuXpAhXl-SoKHeesCl4Q8gEwAHoECAsQAQ">
-      г. Киев, пр-т Леси Украинки, 26</a>
-    <div class="footer-contacts">
-      <a href="mailto:info@devstudio.com">info@devstudio.com</a>
-      <a href="tel:+380961111111">+38 096 111 11 11</a>
-    </div>  
-    </address>
-    <section class="join-us">
-      <h3>присоединяйтесь</h3>
-      <ul>
-        <li><a href="" aria-label="instagram"></a></li>
-        <li><a href="" aria-label="twiter"></a></li>
-        <li><a href="" aria-label="facebook"></a></li>
-        <li><a href="" aria-label="linkedin"></a></li>
-      </ul>
-    </section>
-    <section class="sing-up">
-      <h3>Подпишитесь на рассылку</h3>
-      <form action="#">
-       <input type="text" name="E-mail" value="E-mail">
-       <input type="submit" value="Подпишитесь на рассылку">
-      </form>
-    </section>
+    <div class="conteiner conte-footer">
+      <div class="position-adress">
+        <a href="/" class="logo"><span class="logo-one">Web</span> Studio</a>
+        <address class="footer-adress">
+          <a href="https://www.google.com/maps/place/%D0%B1%D1%83%D0%BB.+%D0%9B%D0%B5%D1%81%D0%B8+%D0%A3%D0%BA%D1%80%D0%B0%D0%B8%D0%BD%D0%BA%D0%B8,+26,+%D0%9A%D0%B8%D0%B5%D0%B2,+02000/data=!4m2!3m1!1s0x40d4cf0e033ecbe9:0x57a4dffefec77da0?sa=X&ved=2ahUKEwi7kYGuuuXpAhXl-SoKHeesCl4Q8gEwAHoECAsQAQ" target="_blank">
+          г. Киев, пр-т Леси Украинки, 26</a>
+          <div class="footer-contacts footer-phone">
+            <a href="mailto:info@devstudio.com">info@devstudio.com</a>
+            <a href="tel:+380961111111">+38 096 111 11 11</a>
+          </div>  
+        </address>
+      </div>
+      <div class="join-us">
+        <h3>присоединяйтесь</h3>
+        <ul>
+          <li><a href="" aria-label="instagram"></a></li>
+          <li><a href="" aria-label="twiter"></a></li>
+          <li><a href="" aria-label="facebook"></a></li>
+          <li><a href="" aria-label="linkedin"></a></li>
+        </ul>
+      </div>
+      <div class="sing-up">
+        <h3>Подпишитесь на рассылку</h3>
+        <form action="#">
+         <input type="text" name="E-mail" value="E-mail" size="55">
+         <input type="submit" value="Подпиcаться">
+        </form>
+      </div>  
+    </div>
     <div class="dev">2020 | Developed by GoIT Students </div>
   </footer>
 </body>

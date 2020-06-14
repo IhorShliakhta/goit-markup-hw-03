@@ -9,6 +9,7 @@ body {
     font-family: var(--font-text);
     letter-spacing: 0.03em;
     color: var(--color-text);
+    margin: 0;
     
 }
 
@@ -16,6 +17,7 @@ body {
 a {
     text-decoration: none;
     color: var(--color-text);
+    Font-family: var(--font-text);
 }
 
 ul {
@@ -32,6 +34,7 @@ a:hover, a:focus {
     font-style: normal;
     font-size: 26px;
     line-height: 31px;
+    margin-right: 85px;
 }
 
 .logo-one {
@@ -48,9 +51,45 @@ header {
 
 .contacts {
     color: #757575;
+    margin-left: auto;
+    justify-content: row;
 }
 
-h1 {
+.contacts li:not(:last-child),
+.nav-conteiner li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.conteiner-header  {
+    display: flex;
+    justify-content: center;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-bottom: 0;
+}
+
+.nav-conteiner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner-header ul {
+    display: flex;
+}
+
+.background-img {
+    margin: auto;
+    width: 1600px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--color-text);
+}
+
+.hero-title {
     font-weight: 900;
     font-size: 44px;
     line-height: 60px;
@@ -58,7 +97,9 @@ h1 {
     letter-spacing: 0.06em;
     text-transform: uppercase;
     color: #FFFFFF;
-    background-color: var(--color-text);
+    
+    width: 700px;
+    
     /*бекграунд для подстветки текста*/
 }
 
@@ -70,8 +111,26 @@ h1 {
     text-align: center;
     letter-spacing: 0.06em;
     color: #FFFFFF;
-    background-color: var(--color-text);
-    /*бекграунд для подстветки текста*/
+    width: 200px;
+    height: 50px;
+    background: #2196F3;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+}
+
+.qualities-conteiner {
+    display: flex;
+    flex-direction: column;
+}
+
+.qualities-box1, 
+.qualities-box2,
+.qualities-box3,
+.qualities-box4 {
+    display: flex;
+    height: 240px;
+    
+
 }
 
 .section-subtitle {
@@ -150,12 +209,12 @@ footer, footer a {
     line-height: 24px;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.6);
+    display: flex;
 }
 
 .join-us, .sing-up {
-    font-weight: bold;
+    font-weight: normal;
     font-size: 14px;
-    line-height: 16px;
     letter-spacing: 0.03em;
     text-transform: uppercase;
     color: #FFFFFF;
@@ -167,6 +226,7 @@ footer, footer a {
     text-align: center;
     letter-spacing: 0.03em;
     color: rgba(255, 255, 255, 0.4);
+    height: 25px;
 }
 
 .project a {
@@ -198,4 +258,50 @@ footer, footer a {
     color: #757575;
 }
 
+.conteiner {
+    width: 1200px;
+    display: flex;
+    margin: auto;
+}
+
+.conteiner .contacts {
+    margin-left: auto;
+    align-items: baseline;
+}
+
+.footer-adress {
+    font-style: normal;
+    font-size: 14px;
+}
+
+.conte-footer {
+    justify-content: space-between;
+    height: 225px;
+    padding-left: 15px; 
+    padding-right: 15px;
+}
+
+.position-adress {
+    width: 230px;
+    flex-direction: column ;
+    justify-content: flex-start;
+    margin-top: 45px;
+}
+
+
+.footer-phone {
+    display: flex;
+    flex-direction: column ;
+
+}
+
+.join-us {
+    margin-top: 45px;
+    width: 206px;
+}
+
+.sing-up {
+    margin-top: 45px;
+    width: 570px;
+}
 
