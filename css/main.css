@@ -52,6 +52,8 @@ header {
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .contacts {
@@ -70,6 +72,7 @@ header {
     justify-content: center;
     padding-left: 15px;
     padding-right: 15px;
+   
     margin-bottom: 0;
 }
 
@@ -81,17 +84,20 @@ header {
 
 .conteiner-header ul {
     display: flex;
+    margin: 0;
 }
 
-.background-img {
+.main-baner {
+    background-color: var(--color-text);
+}
+
+.main-pic {
     margin: auto;
-    width: 1600px;
     height: 600px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--color-text);
 }
 
 .hero-title {
@@ -315,6 +321,7 @@ footer, footer a {
 
 .project a:hover, .project a:focus {
     color: #FFFFFF;
+    background: #2196F3;
 }
 
 .project h3 {
@@ -347,12 +354,16 @@ footer, footer a {
 
 .project-link li {
     background: #F5F4FA;
-    margin-left: 10px ;
+    
+}
+
+.project-link li:not(:first-child) {
+    margin-left: 10px;
 }
 
 .project-link li a {
     border-radius: 4px;
-    margin: 6px 22px;
+    padding: 6px 22px;
 }
 
 .card-position {
@@ -373,12 +384,10 @@ footer, footer a {
     margin-right: 30px;
     border: 1px solid #EEEEEE;
     box-sizing: border-box;
-    padding/: ;
-
 }
 
-.card-portfolio:not(img) {
-    padding-right: 25px;
+.card-portfolio li:not(img) {
+    padding-left: 24px;
 }
 
 .card-portfolio:nth-child(n + 4) {
@@ -389,9 +398,23 @@ footer, footer a {
     margin-right: 0;
 }
 
+.card-content h3 {
+    margin: 0;
+    margin-top: 20px;
+    margin-bottom: 4px;
+    padding-left: 24px;
+}
+ 
+.card-content p {
+    margin: 0;
+    padding-left: 24px;
+    margin-bottom: 20px;
+}
+
 .conteiner .contacts {
     margin-left: auto;
-    align-items: baseline;
+    display: flex;
+    align-items: center;
 }
 
 .footer-adress {
@@ -432,4 +455,13 @@ footer, footer a {
 
 .visually-hidden {
     color: rgba(163, 160, 160, 0.2);;
+}
+
+.button2 {
+    color: #FFFFFF;
+    border-radius: 4px;
+    background-color: #2196F3;
+    font-style: Bold;
+    font-size: 16px;
+    padding: 10px 62px 10px 29px;
 }
