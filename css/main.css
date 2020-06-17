@@ -461,7 +461,7 @@ footer, footer a {
     color: #FFFFFF;
     border-radius: 4px;
     background-color: #2196F3;
-    font-style: Bold;
+    font-weight: bold;
     font-size: 16px;
     padding: 10px 62px 10px 29px;
 }
